@@ -1,0 +1,105 @@
+Watching for file changes with StatReloader
+[20/Dec/2019 05:36:50] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 05:38:44] "GET /index HTTP/1.1" 301 0
+[20/Dec/2019 05:38:44] "GET /index/ HTTP/1.1" 200 371
+Not Found: /favicon.ico
+[20/Dec/2019 05:38:45] "GET /favicon.ico HTTP/1.1" 404 2197
+Not Found: /
+[20/Dec/2019 05:57:48] "POST / HTTP/1.1" 404 2147
+[20/Dec/2019 06:02:11] "POST /uploadfile/ HTTP/1.1" 200 7
+----------------------------------------
+Exception happened during processing of request from ('202.120.40.60', 43170)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/socketserver.py", line 654, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 364, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 724, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 174, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/servers/basehttp.py", line 182, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+Internal Server Error: /uploadfile
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/middleware/common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 159.138.58.61:9999/uploadfile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[20/Dec/2019 06:03:40] "POST /uploadfile HTTP/1.1" 500 61560
+Internal Server Error: /uploadfile
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/middleware/common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 159.138.58.61:9999/uploadfile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[20/Dec/2019 06:04:33] "POST /uploadfile HTTP/1.1" 500 61560
+Internal Server Error: /uploadfile
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/middleware/common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 159.138.58.61:9999/uploadfile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[20/Dec/2019 06:05:27] "POST /uploadfile HTTP/1.1" 500 61560
+Internal Server Error: /uploadfile
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/middleware/common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 159.138.58.61:9999/uploadfile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[20/Dec/2019 06:07:08] "POST /uploadfile HTTP/1.1" 500 61560
+Internal Server Error: /uploadfile
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/middleware/common.py", line 94, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 159.138.58.61:9999/uploadfile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+[20/Dec/2019 06:08:27] "POST /uploadfile HTTP/1.1" 500 61560
+[20/Dec/2019 06:15:04] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 06:20:13] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 06:21:41] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 06:57:32] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 06:58:07] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 06:59:08] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 06:59:38] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 07:05:32] "POST /uploadfile/ HTTP/1.1" 200 20
+[20/Dec/2019 08:20:52] "POST /uploadfile/ HTTP/1.1" 200 20
+[20/Dec/2019 08:20:53] "POST /uploadfile/ HTTP/1.1" 200 20
+[20/Dec/2019 08:20:54] "POST /uploadfile/ HTTP/1.1" 200 20
+[20/Dec/2019 08:20:55] "POST /uploadfile/ HTTP/1.1" 200 20
+[20/Dec/2019 10:42:38] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 10:42:42] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 10:44:27] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 10:45:00] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 10:47:38] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 10:48:01] "POST /uploadfile/ HTTP/1.1" 200 7
+[20/Dec/2019 10:49:17] "POST /uploadfile/ HTTP/1.1" 200 7
